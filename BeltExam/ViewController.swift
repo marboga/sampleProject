@@ -48,6 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableview.reloadData()
     }
     
+    
 //PREPARE 4 SEGUE
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "AddBeastSegue" {
@@ -71,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print(results)
                 beastsToComplete = []
                 for i in 0..<results.count {
-                    if results[i].completed == false {
+                    if results[i].completed == 0 {
                         beastsToComplete.append(results[i])
                     }
                 }
@@ -96,9 +97,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
 
+//MARK AS COMPLETE
     func setComplete(thisCell: BeastCell) {
-        print("here")
-        
+        print("CLICKED COMPLETION BUTTON")
+        if let indexPath = tableview.indexPathForCell(thisCell) {
+            print(indexPath, "indexpath")
+            let beastToEdit = beastsToComplete[indexPath.row]
+            beastToEdit.completed_at = NSDate()
+            beastToEdit.completed = true
+            print(beastToEdit)
+            app.saveContext()
+            getIncompleteBeasts()
+            tableview.reloadData()
+        } else {
+            print("something went awry with that.")
+        }
     }
     
     //DELEGATE FUNCTIONS
@@ -127,6 +140,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func cancelDelegateFunction() {
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
     
     
     

@@ -18,6 +18,8 @@
 		A6F90EF71CEF72F0008DC7B2 /* BeastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90EF61CEF72F0008DC7B2 /* BeastCell.swift */; };
 		A6F90EF91CEF7564008DC7B2 /* CellTodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90EF81CEF7564008DC7B2 /* CellTodoDelegate.swift */; };
 		A6F90EFB1CEF7746008DC7B2 /* AddBeastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90EFA1CEF7746008DC7B2 /* AddBeastViewController.swift */; };
+		A6F90EFD1CEF85F0008DC7B2 /* CompletedBeastsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90EFC1CEF85F0008DC7B2 /* CompletedBeastsController.swift */; };
+		A6F90EFF1CEF93F8008DC7B2 /* BeastCompleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90EFE1CEF93F8008DC7B2 /* BeastCompleteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A6F90EF61CEF72F0008DC7B2 /* BeastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastCell.swift; sourceTree = "<group>"; };
 		A6F90EF81CEF7564008DC7B2 /* CellTodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTodoDelegate.swift; sourceTree = "<group>"; };
 		A6F90EFA1CEF7746008DC7B2 /* AddBeastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddBeastViewController.swift; path = ../AddBeastViewController.swift; sourceTree = "<group>"; };
+		A6F90EFC1CEF85F0008DC7B2 /* CompletedBeastsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedBeastsController.swift; sourceTree = "<group>"; };
+		A6F90EFE1CEF93F8008DC7B2 /* BeastCompleteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastCompleteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,9 @@
 				A6F90EFA1CEF7746008DC7B2 /* AddBeastViewController.swift */,
 				A6F90EDD1CEF6E70008DC7B2 /* AppDelegate.swift */,
 				A6F90EDF1CEF6E70008DC7B2 /* ViewController.swift */,
+				A6F90EFC1CEF85F0008DC7B2 /* CompletedBeastsController.swift */,
 				A6F90EF61CEF72F0008DC7B2 /* BeastCell.swift */,
+				A6F90EFE1CEF93F8008DC7B2 /* BeastCompleteCell.swift */,
 				A6F90EE11CEF6E70008DC7B2 /* Main.storyboard */,
 				A6F90EF81CEF7564008DC7B2 /* CellTodoDelegate.swift */,
 				A6F90EE71CEF6E70008DC7B2 /* Assets.xcassets */,
@@ -157,6 +163,8 @@
 				A6F90EF51CEF7168008DC7B2 /* Beast.swift in Sources */,
 				A6F90EDE1CEF6E70008DC7B2 /* AppDelegate.swift in Sources */,
 				A6F90EE61CEF6E70008DC7B2 /* BeltExam.xcdatamodeld in Sources */,
+				A6F90EFF1CEF93F8008DC7B2 /* BeastCompleteCell.swift in Sources */,
+				A6F90EFD1CEF85F0008DC7B2 /* CompletedBeastsController.swift in Sources */,
 				A6F90EF41CEF7168008DC7B2 /* Beast+CoreDataProperties.swift in Sources */,
 				A6F90EF71CEF72F0008DC7B2 /* BeastCell.swift in Sources */,
 				A6F90EFB1CEF7746008DC7B2 /* AddBeastViewController.swift in Sources */,
